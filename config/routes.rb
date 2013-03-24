@@ -1,4 +1,6 @@
 Omrails::Application.routes.draw do
+  devise_for :users
+
   get 'about' => 'pages#about'
   get 'help' => 'pages#help'
   get 'community' => 'pages#community'
